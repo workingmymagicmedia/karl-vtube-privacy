@@ -1,27 +1,226 @@
-Privacy Policy — Karl’s Vtube Software
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Privacy Policy for Karl's Vtube Software."
+  />
 
-Last updated: September 15, 2026
+  <title>Privacy Policy — Karl's Vtube Software</title>
 
-Karl’s Vtube Software is a private desktop application used to render an avatar for livestreaming.
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #101114;
+      --panel: #181a1f;
+      --text: #f4f4f4;
+      --muted: #b8bcc6;
+      --accent: #7c8cff;
+      --border: #2b2e36;
+    }
 
-Camera Access
-The application accesses the user-selected camera in order to provide a live video stream to Snap Camera Kit for real-time Lens rendering. The application does not include functionality to publish or broadcast the user’s raw webcam feed to Snapchat.
+    * {
+      box-sizing: border-box;
+    }
 
-Data Collected by Karl’s Vtube Software
-Karl’s Vtube Software does not require a user account and does not maintain a database of personal information. Camera Kit configuration information, such as Lens identifiers and application settings, may be stored locally on the computer.
+    body {
+      margin: 0;
+      font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
 
-Snap Camera Kit
-The application uses Snap Camera Kit. Camera Kit may collect anonymized usage, diagnostic, crash, and performance information as part of its normal operation. Snap’s own privacy practices are governed by Snap’s applicable privacy policies and Camera Kit terms.
+    main {
+      width: min(850px, calc(100% - 32px));
+      margin: 48px auto;
+      padding: 40px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
 
-Camera and Microphone Permissions
-Camera access is requested only when needed for avatar rendering. Microphone access will only be requested if functionality requiring microphone input is enabled. The application does not request background location access.
+    h1 {
+      margin-top: 0;
+      line-height: 1.2;
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
 
-Sharing of Information
-Karl’s Vtube Software does not sell personal information. The application does not intentionally provide the user’s webcam stream to other users or publish it to Snapchat.
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+    }
 
-Distribution
-Karl’s Vtube Software is currently a private application intended for personal use and is not publicly distributed.
+    p {
+      margin-top: 0.5rem;
+    }
 
-Contact
-For questions regarding this privacy policy, contact:
-workingmymagicmedia@gmail.com
+    .updated {
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+
+    .contact-button {
+      appearance: none;
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 16px;
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+      background: var(--accent);
+      color: white;
+    }
+
+    .contact-button:hover {
+      filter: brightness(1.08);
+    }
+
+    #contact-result {
+      margin-top: 12px;
+      min-height: 1.5em;
+    }
+
+    #contact-result a {
+      color: var(--accent);
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin: 16px auto;
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Privacy Policy — Karl’s Vtube Software</h1>
+
+    <p class="updated">
+      <strong>Last updated:</strong> September 15, 2026
+    </p>
+
+    <p>
+      Karl’s Vtube Software is a private desktop application used to render
+      an avatar for livestreaming.
+    </p>
+
+    <h2>Camera Access</h2>
+
+    <p>
+      The application accesses the user-selected camera in order to provide a
+      live video stream to Snap Camera Kit for real-time Lens rendering.
+      The application does not include functionality to publish or broadcast
+      the user’s raw webcam feed to Snapchat.
+    </p>
+
+    <h2>Data Collected by Karl’s Vtube Software</h2>
+
+    <p>
+      Karl’s Vtube Software does not require a user account and does not
+      maintain a database of personal information. Camera Kit configuration
+      information, such as Lens identifiers and application settings, may be
+      stored locally on the computer.
+    </p>
+
+    <h2>Snap Camera Kit</h2>
+
+    <p>
+      The application uses Snap Camera Kit. Camera Kit may collect anonymized
+      usage, diagnostic, crash, and performance information as part of its
+      normal operation. Snap’s own privacy practices are governed by Snap’s
+      applicable privacy policies and Camera Kit terms.
+    </p>
+
+    <h2>Camera and Microphone Permissions</h2>
+
+    <p>
+      Camera access is requested only when needed for avatar rendering.
+      Microphone access will only be requested if functionality requiring
+      microphone input is enabled. The application does not request background
+      location access.
+    </p>
+
+    <h2>Sharing of Information</h2>
+
+    <p>
+      Karl’s Vtube Software does not sell personal information. The
+      application does not intentionally provide the user’s webcam stream to
+      other users or publish it to Snapchat.
+    </p>
+
+    <h2>Distribution</h2>
+
+    <p>
+      Karl’s Vtube Software is currently a private application intended for
+      personal use and is not publicly distributed.
+    </p>
+
+    <h2>Contact</h2>
+
+    <p>
+      For questions regarding this privacy policy, use the contact information
+      below.
+    </p>
+
+    <button
+      id="show-contact"
+      class="contact-button"
+      type="button"
+    >
+      Show contact email
+    </button>
+
+    <div id="contact-result" aria-live="polite"></div>
+
+    <footer>
+      © 2026 Working My Magic Media
+    </footer>
+  </main>
+
+  <script>
+    (() => {
+      const button = document.getElementById("show-contact");
+      const result = document.getElementById("contact-result");
+
+      // Stored as character codes so the email address does not appear
+      // as plain text in the HTML source.
+      const encodedEmail = [
+        119, 111, 114, 107, 105, 110, 103, 109, 121, 109,
+        97, 103, 105, 99, 109, 101, 100, 105, 97, 64,
+        103, 109, 97, 105, 108, 46, 99, 111, 109
+      ];
+
+      button.addEventListener("click", () => {
+        const email = String.fromCharCode(...encodedEmail);
+
+        const link = document.createElement("a");
+        link.href = "mailto:" + email;
+        link.textContent = email;
+
+        result.replaceChildren(link);
+        button.hidden = true;
+      });
+    })();
+  </script>
+</body>
+</html>
